@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Boostfolia</title>
 	
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
@@ -29,13 +29,13 @@
 		</div>
 		<nav class="header-menu">
 			<ul>
-				<li><a href="#">About us</a></li>
-				<li><a href="#">Our works</a></li>
-				<li><a href="#">Who we are</a></li>
-				<li><a href="#">Some features</a></li>
-				<li><a href="#">Blog posts</a></li>
-				<li><a href="#">Chose plan</a></li>
-				<li><a href="#">Get in touch</a></li>
+				<li><a href="#about">About us</a></li>
+				<li><a href="#portfolio">Our works</a></li>
+				<li><a href="#team">Who we are</a></li>
+				<li><a href="#features">Some features</a></li>
+				<li><a href="#blogs">Blog posts</a></li>
+				<li><a href="#pricing">Chose plan</a></li>
+				<li><a href="#contact">Get in touch</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -88,7 +88,7 @@
 		</div>
 	</section>
 
-	<section class="about">
+	<section id="about" class="about">
 		<div class="container">
 			<h1 class="about__title title title__decorator">About us</h1>
 			<p class="about__text">
@@ -115,7 +115,7 @@
 	</section>
 
 
-	<section class="video row mr-0">
+	<section id="video" class="video row mr-0">
 		<div class="video-caption col-md-6 text-center">
 			<h1 class="video__title">Watch behind the scene</h1>
 			<p class="video__text">Lorem ipsum dolo the lorem r sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
@@ -148,7 +148,7 @@
 	</div>
 
 
-	<section class="portfolio text-center">
+	<section id="portfolio" class="portfolio text-center">
 		<div class="container">
 			<h1 class="portfolio__title title title__decorator">Our works</h1>
 			<p class="portfolio__text">
@@ -203,7 +203,7 @@
 		</div>
 	</section>
 
-	<section class="clients">
+	<section id="clients" class="clients">
 		<div class="container">
 			<div class="clients-slider">
 				<div class="clients-slide">
@@ -238,7 +238,7 @@
 	</section>
 
 
-	<section class="team">
+	<section id="team" class="team">
 		<div class="container">
 			<h1 class="team__title title title__decorator">Who we are</h1>
 			<p class="team__text">
@@ -306,7 +306,7 @@
 		</div>
 	</section>
 
-	<section class="features">
+	<section id="features" class="features">
 		<div class="container">
 			<h1 class="features__title title title__decorator--light">Some features</h1>
 			<div class="features-items d-flex justify-content-around align-items-center flex-wrap">
@@ -358,7 +358,7 @@
 		</div>
 	</section>
 
-	<section class="blogs">
+	<section id="blogs" class="blogs">
 		<div class="container">
 			<h1 class="blogs__title title title__decorator text-center">Blog posts</h1>
 			<p class="blogs__text text-center">
@@ -459,7 +459,7 @@
 		</div>
 	</section>
 
-	<section class="pricing">
+	<section id="pricing" class="pricing">
 		<div class="container">
 			<h1 class="pricing__title title title__decorator--light">Chose plan</h1>
 
@@ -536,7 +536,7 @@
 		</div>
 	</section>
 
-	<section class="contact">
+	<section id="contact" class="contact">
 		<div class="container">
 			<h1 class="contact__title title title__decorator">Get in touch</h1>
 			<p class="contact__text text-center">
@@ -548,15 +548,15 @@
 					<div class="row">
 						<label class="col-md-6">
 							name <span class="contact-form__required">*</span><br>
-							<input class="contact-form__name w-100" type="text">
+							<input class="contact-form__name w-100" type="text" required>
 						</label>
 						<label class="col-md-6">
 							mail <span class="contact-form__required">*</span><br>
-							<input class="contact-form__mail w-100" type="text">
+							<input class="contact-form__mail w-100" type="text" required>
 						</label>
 						<label class="col-12">
 							message <span class="contact-form__required">*</span><br>
-							<textarea class="contact-form__message w-100" type="text"></textarea>
+							<textarea class="contact-form__message w-100" required></textarea>
 						</label>
 					</div>
 					<button class="contact-form__button d-block mx-auto">send message</button>
@@ -568,8 +568,12 @@
 	<footer class="footer">
 		<div class="footer-top">
 			<div class="container">
-				locate on map <a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+				<a href="#">locate on map <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 			</div>
+		</div>
+
+		<div class="footer-map">
+			<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d55962.334491031594!2d27.57004779008958!3d53.89061539801052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1601284487193!5m2!1sru!2sby" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 		</div>
 		
 		<div class="footer-bottom">
@@ -604,5 +608,7 @@
 	<script src="js/slider_pricing.js"></script>
 	<script src="js/video.js"></script>
 	<script src="js/tabs.js"></script>
+	<script src="js/scroll.js"></script>
+	<script src="js/map.js"></script>
 </body>
 </html>

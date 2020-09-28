@@ -374,7 +374,6 @@ a, a:hover {
     cursor: pointer;
     transition: 0.3s;
     text-transform: uppercase;
-    font-family: 'Roboto';
     color: #3d3d3d;
     outline: none;
     margin-bottom: 10px;
@@ -624,6 +623,11 @@ a, a:hover {
 	color: #f6f6f6;
 }
 
+.features__title {
+	color: #f3e7e6;
+	letter-spacing: 10px;
+}
+
 .title__decorator--light:after {
 	content: '';
 	display: block;
@@ -806,10 +810,12 @@ a, a:hover {
 	background-color: #f6744b;
 	border-radius: 3px;
 	border: none;
+	transition: all 0.3s ease-out;
 }
 
 .pricing-slide__button:hover {
 	color: #fff;
+	background-color: #c55532;
 }
 
 .pricing-slider .slick-prev {
@@ -900,12 +906,16 @@ a, a:hover {
 }
 
 .footer-top a {
+	color: #fff;
+}
+
+.footer-top a i {
 	color: #c55532;
 	font-size: 30px;
 }
 
 .footer-top a:hover {
-	color: #c55532;
+	color: #858080;
 }
 
 .footer-bottom {
@@ -939,4 +949,9 @@ a, a:hover {
 
 .footer__social:hover {
 	color: #858080;
+}
+
+.footer-map, .footer-map iframe {
+	height: 0;
+	border: none;
 }
