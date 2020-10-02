@@ -905,6 +905,10 @@ a, a:hover {
 	font-weight: 600;
 }
 
+.footer-map iframe {
+	display: block;
+}
+
 .footer-top a {
 	color: #fff;
 }
